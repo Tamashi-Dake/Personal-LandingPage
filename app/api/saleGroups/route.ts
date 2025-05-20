@@ -16,8 +16,8 @@ export async function GET() {
   try {
     const saleGroups = await SaleGroups.find({});
     return NextResponse.json(saleGroups);
-  } catch (error: any) {
-    NextResponse.json({ error: error.message });
+  } catch (error: unknown) {
+    NextResponse.json({ error });
   }
 }
 
