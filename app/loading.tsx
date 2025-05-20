@@ -1,5 +1,11 @@
+import { LoadingSpinner } from "./components/skeletons/LoadingSpinner";
+
 const loading = () => {
-  return <span className="text-center">Loading</span>;
+  return (
+    <main className="w-screen flex items-center justify-center h-screen">
+      <LoadingSpinner className="text-white" />
+    </main>
+  );
 };
 
 export default loading;
