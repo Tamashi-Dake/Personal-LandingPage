@@ -5,11 +5,11 @@ import SaleGroup from "./components/SaleGroup";
 
 export default async function Home() {
   const shopDetail = {
-    logo: "https://res.cloudinary.com/da7gx7iae/image/upload/v1743299204/samples/animals/reindeer.jpg",
-    title: "Shop Online",
-    location: "123 Đường Gia Cát Lượng - TT Cao Thuong - Tan Yen - Ha Noi",
+    logo: "https://res.cloudinary.com/da7gx7iae/image/upload/v1749961018/avt_simbacgiang.vn_d2nr8x.jpg",
+    title: "SIM BẮC GIANG.VN",
+    location: "Đại Hóa - Quang Trung - Bắc Giang",
     phone: process.env.PHONE_NUMBER,
-    note: "Nhận các kèo liên quan đến web dev 👍",
+    note: "TỔNG KHO SIM LỚN NHẤT BẮC GIANG",
   };
 
   const getSaleGroups = async () => {
@@ -38,11 +38,12 @@ export default async function Home() {
             alt="Logo"
             src={shopDetail.logo}
             fill
+            // unoptimized
             className="object-cover rounded-full"
           />
           <CheckCircle2 className="fill-sky-500 absolute right-0 max-md:bottom-2 md:bottom-5" />
         </div>
-        <div className="">
+        <div className="text-center">
           <h3 className=" text-center">{shopDetail.title}</h3>
           <div className="flex flex-col gap-2 main-co">
             <p>Địa chỉ: {shopDetail.location}</p>
